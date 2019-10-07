@@ -1,0 +1,22 @@
+{
+  "name": "iform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nata2653/iForm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nata2653/iForm/issues"
+  },
+  "homepage": "https://github.com/nata2653/iForm#readme",
+  "devDependencies": {
+    "sass": "^1.23.0"
+  }
+}
