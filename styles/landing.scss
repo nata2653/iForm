@@ -1,83 +1,91 @@
+// * Her ville jeg nok lave en * {margin: 0; padding: 0;} i vores style.scss i toppen
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .images img {
-  width: 100vw;
+    width: 100vw;
 }
 
+
 .order {
-  display: grid;
-  justify-items: center;
-
-  .saving {
-    color: $red;
-  }
-
-  a {
-    font-family: $body-text;
-  }
-
-  .link-order {
-    background: $red;
-    height: 50px;
-    width: 80%;
-    color: $white;
-    font-size: 1.3em;
-    text-align: center;
-    text-decoration: none;
     display: grid;
+    justify-items: center;
 
-    align-items: center;
-  }
-  p {
-    font-family: $body-text;
-  }
+    .saving {
+        color: $red;
+    }
 
-  .ranking {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 10px;
-    margin-left: 40px;
-    img {
-      width: 80%;
-      height: 80%;
+    a {
+        font-family: $body-text;
+    }
+
+    .link-order {
+        // ? er order knappen ikke lilla ($priamry)?
+        background: $red;
+        height: 50px;
+        width: 80%;
+        color: $white;
+        font-size: 1.3em;
+        text-align: center;
+        text-decoration: none;
+        display: grid;
+
+        align-items: center;
     }
 
     p {
-      font-size: 0.7em;
-      margin-right: 40px;
+        font-family: $body-text;
     }
-  }
 
-  .btn-see-more {
-    background: $red;
-    height: 20px;
-    width: 30vw;
-    color: $white;
-  }
-  .porto span {
-    display: flex;
-  }
+    .ranking {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 10px;
+        margin-left: 40px;
+
+        img {
+            width: 80%;
+            height: 80%;
+        }
+
+        p {
+            font-size: 0.7em;
+            margin-right: 40px;
+        }
+    }
+
+    .btn-see-more {
+        background: $red;
+        height: 20px;
+        width: 30vw;
+        color: $white;
+    }
+
+    // * Den her kunne du godt ungå - du kan lave et line break (<br>) i p tagget i html
+    .porto span {
+        display: flex;
+    }
 }
 
 ul {
-  line-height: 1.7;
-  margin-right: 10px;
-  li {
-    list-style-type: none;
-    font-family: $body-text;
+    line-height: 1.7;
+    margin-right: 10px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 1.4em;
-      margin-top: 7px;
-      width: 12px;
-      height: 12px;
-      background-image: url(img/checkmark-pink.png);
-      background-repeat: no-repeat;
-      background-size: cover;
+    li {
+        list-style-type: none;
+        font-family: $body-text;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 1.4em;
+            margin-top: 7px;
+            width: 12px;
+            height: 12px;
+            background-image: url(img/checkmark-pink.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
-  }
 }
