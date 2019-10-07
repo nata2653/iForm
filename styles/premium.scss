@@ -1,3 +1,4 @@
+// ! Alle vores farver opbevare vi i colors.scss
 $shadow-color: #000000;
 
 h2 {
@@ -7,8 +8,10 @@ h2 {
 header {
   width: 100%;
   height: 60px;
+  // ! Husk at brug de rigtige farver
   background-color: purple;
 }
+
 .image {
   display: flex;
   justify-content: center;
@@ -40,7 +43,9 @@ header {
   margin: 30px 100px 0 120px;
   font-size: 1.3em;
   border-radius: 3px;
+  // ! Husk at brug de rigtige farver
   background-color: purple;
+  // ! Husk at brug de rigtige farver
   color: white;
 }
 
@@ -50,16 +55,19 @@ header {
 
 .valgt {
   //   border: solid 2px purple;
+  // ! Husk at brug de rigtige farver
   background-color: purple;
 }
 
 .back p {
   text-align: center;
+  // ! Husk at brug de rigtige farver
   color: grey;
 }
 
 .back p:hover {
   text-align: center;
+  // ! Husk at brug de rigtige farver
   color: black;
 }
 
@@ -79,6 +87,7 @@ header {
   margin: 10px;
   position: relative;
 }
+
 .wrapper ul li:before {
   content: ">";
   position: absolute;
@@ -87,6 +96,7 @@ header {
   right: -15px;
   font-size: 20px;
   font-weight: bold;
+  // ! Husk at brug de rigtige farver
   color: #2c3e50;
 }
 
@@ -100,6 +110,7 @@ header {
 
 .wrapper ul li a {
   text-align: center;
+  // ! Husk at brug de rigtige farver
   color: #fff;
   font-size: 18px;
 }
@@ -112,8 +123,11 @@ header {
   margin: 0 auto 12px;
   font-size: 22px;
   text-align: center;
+  // ! Husk at brug de rigtige farver
   background: #2c3e50;
+  // ! Husk at brug de rigtige farver
   color: #fff;
   border-radius: 50%;
+  // ! Husk at brug de rigtige farver
   box-shadow: 0px 3px 6px 0px rgba(62, 88, 113, 0.8);
 }
