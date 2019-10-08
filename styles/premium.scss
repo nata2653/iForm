@@ -7,7 +7,7 @@ h2 {
 header {
   width: 100%;
   height: 60px;
-  background-color: purple;
+  background-color: $primary;
 }
 .image {
   display: flex;
@@ -23,24 +23,37 @@ header {
   margin: 40px 130px 0 120px;
 }
 
-.sizes button {
+.sizes label {
   width: 110px;
   height: 60px;
   background-color: transparent;
   border-radius: 3px;
+  border: 2px solid rgb(196, 195, 195);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sizes button:hover {
-  box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
+.sizes label:hover {
+  //   box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
+}
+
+.sizes input {
+  position: absolute;
+  right: 100vw;
+}
+
+.sizes input:checked + label {
+  border-color: $primary;
 }
 
 .next_btn button {
-  width: 260px;
+  width: 265px;
   height: 60px;
   margin: 30px 100px 0 120px;
   font-size: 1.3em;
   border-radius: 3px;
-  background-color: purple;
+  background-color: $primary;
   color: white;
 }
 
@@ -48,72 +61,12 @@ header {
   box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
 }
 
-.valgt {
-  //   border: solid 2px purple;
-  background-color: purple;
-}
-
 .back p {
   text-align: center;
-  color: grey;
+  color: $primary;
 }
 
 .back p:hover {
   text-align: center;
   color: black;
-}
-
-// BREADCRUMB fra https://codepen.io/cool_lazyboy/pen/orLRax
-.wrapper {
-  margin-right: 45px;
-}
-
-.wrapper ul {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
-}
-
-.wrapper ul li {
-  width: 100px;
-  margin: 10px;
-  position: relative;
-}
-.wrapper ul li:before {
-  content: ">";
-  position: absolute;
-  top: 25%;
-  transform: translateY(-50%);
-  right: -15px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-.wrapper ul li:last-child {
-  //   margin-right: 0;
-}
-
-.wrapper ul li:last-child:before {
-  display: none;
-}
-
-.wrapper ul li a {
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-}
-
-.wrapper ul li a .icon {
-  display: block;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  margin: 0 auto 12px;
-  font-size: 22px;
-  text-align: center;
-  background: #2c3e50;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: 0px 3px 6px 0px rgba(62, 88, 113, 0.8);
 }
