@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .images img {
   width: 100vw;
 }
@@ -12,11 +16,11 @@ body {
 }
 .order a {
   font-family: "Open Sans", sans-serif;
-  color: #f36;
+  color: #5C1182;
   text-decoration: underline;
 }
 .order .link-order {
-  background: #f36;
+  background: #5C1182;
   height: 50px;
   width: 80%;
   color: #f5f5f5;
@@ -45,7 +49,11 @@ body {
   margin-right: 40px;
 }
 .order .btn-see-more {
+<<<<<<< HEAD
   background: #f36;
+=======
+  background: #5C1182;
+>>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 25px;
   width: 30vw;
   color: #f5f5f5;
@@ -94,6 +102,135 @@ ul li::before {
   background-size: cover;
 }
 
+.hide {
+  display: none;
+}
+
+.choose h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 2em 0em;
+}
+
+.boxes {
+  display: grid;
+  justify-items: center;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+.boxes input {
+  position: absolute;
+  right: 100vw;
+}
+.boxes label {
+  border: 1px #888B8D solid;
+  padding: 1em;
+  width: 70%;
+  text-align: center;
+  position: relative;
+}
+.boxes label:first-of-type {
+  margin-bottom: 20px;
+}
+.boxes label span {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.2em;
+  color: #f36;
+}
+.boxes label[data-label]::before {
+  content: attr(data-label);
+  color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  background: #f36;
+}
+.boxes .porto {
+  justify-self: left;
+  margin: -1em 0em 0em 3.3em;
+  font-size: 0.7em;
+}
+.boxes button {
+  justify-self: left;
+  color: #f36;
+  text-decoration: underline;
+  margin: -1em 0em 0em 2.8em;
+}
+.boxes button:hover {
+  border-color: black;
+}
+.boxes input:checked + label {
+  border: 2px #5C1182 solid;
+}
+.boxes input:checked + label:after {
+  background-image: url(/checkmark-pink.76d949b9.png);
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  right: 1.3em;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.show-view {
+  display: grid;
+}
+.show-view .btn-go-to-view {
+  background: #5C1182;
+  color: #f5f5f5;
+  justify-self: right;
+  width: 80%;
+  height: 50px;
+  margin: 40px 35px 0px 0px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  color: #888B8D;
+  text-align: center;
+  margin-top: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.show-saving {
+  justify-self: left;
+  color: #f36;
+  text-decoration: underline;
+  margin: -1em 0em 0em 2.8em;
+}
+.show-saving:hover {
+  border-color: black;
+}
+
+.show {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 1px #888B8D solid;
+  align-items: baseline;
+  margin: 2em;
+}
+.show .value {
+  font-weight: bold;
+}
+
 h2 {
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -140,6 +277,7 @@ header {
   border-color: #5C1182;
 }
 
+<<<<<<< HEAD
 .next_btn {
   display: flex;
   justify-content: center;
@@ -147,6 +285,10 @@ header {
 
 .next_btn button {
   width: 280px;
+=======
+.next_btn button {
+  width: 265px;
+>>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 60px;
   font-size: 1.3em;
   border-radius: 3px;
@@ -155,6 +297,7 @@ header {
   font-family: "Open Sans", sans-serif;
 }
 
+<<<<<<< HEAD
 .next_btn button:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
 }
@@ -168,6 +311,11 @@ header {
 .back p:hover {
   text-align: center;
   color: #161616;
+=======
+.back p {
+  text-align: center;
+  color: #5C1182;
+>>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 .next_btn img {
@@ -190,6 +338,7 @@ body {
 h3 {
   font-family: "Raleway", sans-serif;
   text-align: center;
+<<<<<<< HEAD
 }
 
 .text p {
@@ -273,6 +422,9 @@ h3 {
 .prices span {
   color: #f36;
   font-size: 1.5em;
+=======
+  color: black;
+>>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

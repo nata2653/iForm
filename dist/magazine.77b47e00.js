@@ -117,95 +117,60 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-<<<<<<< HEAD
-})({"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-=======
-})({"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
-var bundleURL = null;
+})({"magazine.js":[function(require,module,exports) {
+"use strict";
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+var box;
+var yourOffer;
+var discount;
+var button = document.querySelector(".show-saving");
+var container = document.querySelectorAll(".container");
+button.addEventListener("click", showSaved);
 
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
+function showSaved() {
+  console.log("Show list of informations");
+  container.forEach(function (container) {
+    if (container.classList.contains("hide")) {
+      container.classList.remove("hide");
+      container.className = "show";
+      button.innerHTML = "Skjul besparelse";
+    } else {
+      container.classList.add("hide");
+      container.classList.remove("show");
+      button.innerHTML = "Se din besparelse";
     }
-  }
-
-  return '/';
+  });
 }
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
+document.querySelectorAll("input").forEach(function (input) {
+  input.addEventListener("click", function (e) {
+    // buttonActivate();
+    console.log(e.target.value);
+    var value = parseInt(e.target.value, "10");
+    document.querySelector(".amount").textContent = value;
+    document.querySelector(".total-value").textContent = value + 600;
+    document.querySelector(".spec-price").textContent = value - discount + 600;
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-<<<<<<< HEAD
-},{}],"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-=======
-},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
-var bundle = require('./bundle-url');
+    if (e.target.value == 310) {
+      document.querySelector(".disc").textContent = 761;
+      discount = 761;
+    } else if (e.target.value == 465) {
+      document.querySelector(".disc").textContent = 866;
+      discount = 866;
+    } else if (e.target.value == 620) {
+      document.querySelector(".disc").textContent = 921;
+      discount = 921;
+    } // box.e.target.value;
 
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-<<<<<<< HEAD
-},{"./bundle-url":"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
-=======
-},{"./bundle-url":"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-<<<<<<< HEAD
-},{"./img/checkmark-pink.png":[["checkmark-pink.76d949b9.png","img/checkmark-pink.png"],"img/checkmark-pink.png"],"_css_loader":"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-=======
-},{"./img/checkmark-pink.png":[["checkmark-pink.76d949b9.png","img/checkmark-pink.png"],"img/checkmark-pink.png"],"_css_loader":"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
+  });
+}); // function buttonActivate() {
+//   document.querySelector(
+//     ".btn-go-to-view".addEventListener("click", () => {
+//       window.location.href = "view.html?box=" + box + "&price" + price;
+//     })
+//   );
+// }
+},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -233,11 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49195" + '/');
-=======
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "57611" + '/');
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -412,9 +373,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-<<<<<<< HEAD
-},{}]},{},["../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-=======
-},{}]},{},["../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
-//# sourceMappingURL=/styles.164d45a1.js.map
+},{}]},{},["../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","magazine.js"], null)
+//# sourceMappingURL=/magazine.77b47e00.js.map

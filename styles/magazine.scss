@@ -1,0 +1,143 @@
+.hide {
+  display: none;
+}
+
+.choose {
+  h1 {
+    font-family: $headline-text;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 2em 0em;
+  }
+}
+
+.boxes {
+  display: grid;
+  justify-items: center;
+  grid-gap: 1.5em;
+  font-family: $body-text;
+
+  input {
+    position: absolute;
+    right: 100vw;
+  }
+
+  label {
+    border: 1px $grey solid;
+    padding: 1em;
+    width: 70%;
+    text-align: center;
+    position: relative;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0.2em;
+      color: $red;
+    }
+
+    &[data-label]::before {
+      content: attr(data-label);
+      color: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(-100%);
+      background: $red;
+    }
+  }
+
+  .porto {
+    justify-self: left;
+    margin: -1em 0em 0em 3.3em;
+    font-size: 0.7em;
+  }
+
+  button {
+    justify-self: left;
+    color: $red;
+    text-decoration: underline;
+    margin: -1em 0em 0em 2.8em;
+
+    &:hover {
+      border-color: black;
+    }
+  }
+
+  input:checked + label {
+    border: 2px $primary solid;
+  }
+
+  input:checked + label:after {
+    background-image: url(img/checkmark-pink.png);
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    right: 1.3em;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
+
+.show-view {
+  display: grid;
+
+  .btn-go-to-view {
+    background: $primary;
+    color: $white;
+    justify-self: right;
+    width: 80%;
+    height: 50px;
+    margin: 40px 35px 0px 0px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    font-family: $body-text;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.back {
+  color: $grey;
+  text-align: center;
+  margin-top: 1em;
+  font-family: $body-text;
+}
+
+.show-saving {
+  justify-self: left;
+  color: $red;
+  text-decoration: underline;
+  margin: -1em 0em 0em 2.8em;
+
+  &:hover {
+    border-color: black;
+  }
+}
+
+.show {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: $body-text;
+  border-bottom: 1px $grey solid;
+  align-items: baseline;
+  margin: 2em;
+
+  .value {
+    font-weight: bold;
+  }
+}
