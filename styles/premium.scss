@@ -8,8 +8,12 @@ h2 {
 header {
   width: 100%;
   height: 60px;
+<<<<<<< HEAD
+  background-color: $primary;
+=======
   // ! Husk at brug de rigtige farver
   background-color: purple;
+>>>>>>> 0fe05ab1958e49754c7ee09912ed81fbf2a89734
 }
 
 .image {
@@ -26,26 +30,43 @@ header {
   margin: 40px 130px 0 120px;
 }
 
-.sizes button {
+.sizes label {
   width: 110px;
   height: 60px;
   background-color: transparent;
   border-radius: 3px;
+  border: 2px solid rgb(196, 195, 195);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sizes button:hover {
-  box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
+.sizes label:hover {
+  //   box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
+}
+
+.sizes input {
+  position: absolute;
+  right: 100vw;
+}
+
+.sizes input:checked + label {
+  border-color: $primary;
 }
 
 .next_btn button {
-  width: 260px;
+  width: 265px;
   height: 60px;
   margin: 30px 100px 0 120px;
   font-size: 1.3em;
   border-radius: 3px;
+<<<<<<< HEAD
+  background-color: $primary;
+=======
   // ! Husk at brug de rigtige farver
   background-color: purple;
   // ! Husk at brug de rigtige farver
+>>>>>>> 0fe05ab1958e49754c7ee09912ed81fbf2a89734
   color: white;
 }
 
@@ -53,6 +74,11 @@ header {
   box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
 }
 
+<<<<<<< HEAD
+.back p {
+  text-align: center;
+  color: $primary;
+=======
 .valgt {
   //   border: solid 2px purple;
   // ! Husk at brug de rigtige farver
@@ -63,6 +89,7 @@ header {
   text-align: center;
   // ! Husk at brug de rigtige farver
   color: grey;
+>>>>>>> 0fe05ab1958e49754c7ee09912ed81fbf2a89734
 }
 
 .back p:hover {
@@ -70,6 +97,8 @@ header {
   // ! Husk at brug de rigtige farver
   color: black;
 }
+<<<<<<< HEAD
+=======
 
 // BREADCRUMB fra https://codepen.io/cool_lazyboy/pen/orLRax
 .wrapper {
@@ -131,3 +160,4 @@ header {
   // ! Husk at brug de rigtige farver
   box-shadow: 0px 3px 6px 0px rgba(62, 88, 113, 0.8);
 }
+>>>>>>> 0fe05ab1958e49754c7ee09912ed81fbf2a89734

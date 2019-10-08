@@ -17,11 +17,4 @@ function showInfo() {
       button.innerHTML = "Se mere";
     }
   });
-
-  // if (txt.classList.contains(".hide")) {
-  //   txt.classList.remove(".hide");
-  //   button.innerHTML = "Skjul";
-  // } else {
-  //   button.innerHTML = "Se mere";
-  // }
 }

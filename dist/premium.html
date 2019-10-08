@@ -12,46 +12,36 @@
   <body>
     <header></header>
 
-    <div class="wrapper">
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fas fa-home icon"></i>
-            <p>Home</p>
-          </a>
-        </li>
-        <li class="active">
-          <a href="#">
-            <i class="fas fa-tshirt icon"></i>
-            <p>Category</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fas fa-shopping-cart icon"></i>
-            <p>Cart</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="far fa-credit-card icon"></i>
-            <p>Checkout</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-
     <h2>Vælg størrelse</h2>
 
     <div class="image">
       <img src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2018/08/662_ifo_fiberjakke_600x600-1-255x255.png" alt="fiberjakke">
     </div>
 
-    <div class="sizes">
+    <!-- <div class="sizes">
       <button data-str="s">S</button>
       <button data-str="m">M</button>
       <button data-str="l">L</button>
       <button data-str="xl">XL</button>
+    </div> -->
+
+    <div class="sizes">
+      <div class="form-control">
+        <input type="radio" name="size" value="small" id="small">
+        <label for="small">S</label>
+      </div>
+      <div class="form-control">
+        <input type="radio" name="size" value="medium" id="medium">
+        <label for="medium">M</label>
+      </div>
+      <div class="form-control">
+        <input type="radio" name="size" value="large" id="large">
+        <label for="large">L</label>
+      </div>
+      <div class="form-control">
+        <input type="radio" name="size" value="ekstralarge" id="ekstralarge">
+        <label for="ekstralarge">XL</label>
+      </div>
     </div>
     <div class="next_btn">
       <button>Videre</button>
