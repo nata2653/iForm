@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .images img {
   width: 100vw;
 }
@@ -12,12 +16,12 @@ body {
 
   a {
     font-family: $body-text;
-    color: $red;
+    color: $primary;
     text-decoration: underline;
   }
 
   .link-order {
-    background: $red;
+    background: $primary;
     height: 50px;
     width: 80%;
     color: $white;
@@ -50,7 +54,7 @@ body {
   }
 
   .btn-see-more {
-    background: $red;
+    background: $primary;
     height: 25px;
     width: 30vw;
     color: $white;
