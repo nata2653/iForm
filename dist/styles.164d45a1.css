@@ -95,6 +95,127 @@ ul li::before {
 }
 
 h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+
+form {
+  display: grid;
+  justify-items: center;
+}
+form .field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+  font-family: "Open Sans", sans-serif;
+  width: 60%;
+}
+form .field label,
+form .field input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+form .field label {
+  margin-left: 0.1em;
+  color: rgba(22, 22, 22, 0.6);
+}
+form .field label span {
+  background: white;
+  padding: 0 5px;
+}
+form .field input {
+  font-size: 1em;
+  border: 0;
+  border: 1px solid rgba(22, 22, 22, 0.2);
+  font-family: inherit;
+  appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+  padding: 0.8em;
+  border-radius: 0.2em;
+}
+form .field input:focus {
+  outline: 0;
+  border: 1px solid #5C1182;
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+form .field input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.15rem) scale(1.5);
+  font-size: 0.6em;
+}
+form .field ::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+form .field input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+form .field input:not(:placeholder-shown) + label,
+form .field input:focus + label {
+  transform: translate(0.6em, 0.4rem) scale(1);
+  cursor: pointer;
+  color: #5C1182;
+  font-weight: 800;
+  font-size: 0.6em;
+}
+form .field .invalid {
+  transition: all 0s;
+}
+form .field .invalid,
+form .field input:invalid:not(:placeholder-shown):not(:focus) {
+  border: red 1px solid;
+  background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><g fill='none' fill-rule='evenodd'><circle cx='10' cy='10' r='10' fill='crimson'/><path fill='%23FFFFFF' d='M9,6.84848485 C9,5.93939394 9.4,5.33333333 10,5.33333333 C10.6,5.33333333 11,5.93939394 11,6.84848485 L11,10.4848485 C11,11.3939394 10.6,12 10,12 C9.4,12 9,11.3939394 9,10.4848485 L9,6.84848485 Z M10,14.6666667 C9.41666667,14.6666667 9,14.25 9,13.6666667 C9,13.0833333 9.41666667,12.6666667 10,12.6666667 C10.5833333,12.6666667 11,13.0833333 11,13.6666667 C11,14.25 10.5833333,14.6666667 10,14.6666667 L10,14.6666667 Z'/></g></svg>");
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  color: red;
+  animation: errorShake 0.12s 2 forwards;
+}
+form .field .invalid + label,
+form .field input:invalid:not(:placeholder-shown):not(:focus) + label {
+  color: red;
+}
+form .field input:valid:not(:placeholder-shown):not(:focus) {
+  border: green 1px solid;
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  color: green;
+  background-image: url("https://www.shareicon.net/data/128x128/2017/02/09/878601_check_512x512.png");
+}
+form .field input:valid:not(:placeholder-shown):not(:focus) + label {
+  color: green;
+}
+
+.city-container {
+  display: flex;
+  width: 60%;
+  text-align: left;
+}
+
+input[type=text] {
+  text-transform: capitalize;
+}
+
+@keyframes errorShake {
+  50% {
+    transform: translateX(5px);
+  }
+}
+h2 {
   text-align: center;
 }
 
