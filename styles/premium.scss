@@ -1,0 +1,133 @@
+// ! Alle vores farver opbevare vi i colors.scss
+$shadow-color: #000000;
+
+h2 {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  // ! Husk at brug de rigtige farver
+  background-color: purple;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.sizes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+  grid-column-gap: 40px;
+  margin: 40px 130px 0 120px;
+}
+
+.sizes button {
+  width: 110px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.sizes button:hover {
+  box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
+}
+
+.next_btn button {
+  width: 260px;
+  height: 60px;
+  margin: 30px 100px 0 120px;
+  font-size: 1.3em;
+  border-radius: 3px;
+  // ! Husk at brug de rigtige farver
+  background-color: purple;
+  // ! Husk at brug de rigtige farver
+  color: white;
+}
+
+.next_btn button:hover {
+  box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
+}
+
+.valgt {
+  //   border: solid 2px purple;
+  // ! Husk at brug de rigtige farver
+  background-color: purple;
+}
+
+.back p {
+  text-align: center;
+  // ! Husk at brug de rigtige farver
+  color: grey;
+}
+
+.back p:hover {
+  text-align: center;
+  // ! Husk at brug de rigtige farver
+  color: black;
+}
+
+// BREADCRUMB fra https://codepen.io/cool_lazyboy/pen/orLRax
+.wrapper {
+  margin-right: 45px;
+}
+
+.wrapper ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper ul li {
+  width: 100px;
+  margin: 10px;
+  position: relative;
+}
+
+.wrapper ul li:before {
+  content: ">";
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  right: -15px;
+  font-size: 20px;
+  font-weight: bold;
+  // ! Husk at brug de rigtige farver
+  color: #2c3e50;
+}
+
+.wrapper ul li:last-child {
+  //   margin-right: 0;
+}
+
+.wrapper ul li:last-child:before {
+  display: none;
+}
+
+.wrapper ul li a {
+  text-align: center;
+  // ! Husk at brug de rigtige farver
+  color: #fff;
+  font-size: 18px;
+}
+
+.wrapper ul li a .icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto 12px;
+  font-size: 22px;
+  text-align: center;
+  // ! Husk at brug de rigtige farver
+  background: #2c3e50;
+  // ! Husk at brug de rigtige farver
+  color: #fff;
+  border-radius: 50%;
+  // ! Husk at brug de rigtige farver
+  box-shadow: 0px 3px 6px 0px rgba(62, 88, 113, 0.8);
+}
