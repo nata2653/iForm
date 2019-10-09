@@ -2,6 +2,27 @@ body {
   margin: 0;
 }
 
+.txt-top {
+  display: flex;
+  justify-content: center;
+  p {
+    margin: 2em;
+    font-size: 0.7em;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-top: 0.1em;
+      margin-right: 0.7em;
+      width: 12px;
+      height: 12px;
+      background-image: url(img/checkmark-pink.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
 .hide {
   display: none;
 }
@@ -18,6 +39,7 @@ body {
     font-family: $body-text;
     color: $primary;
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .link-order {
@@ -31,6 +53,7 @@ body {
     display: grid;
     border-radius: 5px;
     align-items: center;
+    cursor: pointer;
   }
   p {
     font-family: $body-text;
@@ -62,6 +85,7 @@ body {
     margin: 0px 30px 10px 0px;
     font-size: 0.9em;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .porto {
@@ -80,7 +104,6 @@ body {
       font-size: 2em;
       margin-bottom: -10px;
     }
-
     .saving {
       color: $red;
     }
