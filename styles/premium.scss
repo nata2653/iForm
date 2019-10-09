@@ -1,8 +1,8 @@
-// ! Alle vores farver opbevare vi i colors.scss
 $shadow-color: #000000;
 
 h2 {
   text-align: center;
+  font-family: $headline-text;
 }
 
 .image {
@@ -15,8 +15,9 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
-  grid-column-gap: 40px;
-  margin: 40px 130px 0 120px;
+  grid-column-gap: 0.2px;
+  margin: 40px 0 30px 50px;
+  font-family: $body-text;
 }
 
 .sizes label {
@@ -43,23 +44,34 @@ h2 {
   border-color: $primary;
 }
 
+.next_btn {
+  display: flex;
+  justify-content: center;
+}
+
 .next_btn button {
-  width: 265px;
+  width: 280px;
   height: 60px;
-  margin: 30px 100px 0 120px;
+
   font-size: 1.3em;
   border-radius: 3px;
   background-color: $primary;
   color: white;
+  font-family: $body-text;
+}
+
+.next_btn button:hover {
+  //   box-shadow: (0 3px 3px 0 rgba($shadow-color, 0.16), 0 3px 3px 0 rgba($shadow-color, 0.23));
 }
 
 .back p {
   text-align: center;
-  color: $primary;
+  color: $grey;
+  font-family: $body-text;
 }
 
 .back p:hover {
   text-align: center;
   // ! Husk at brug de rigtige farver
-  color: black;
+  color: $black;
 }
