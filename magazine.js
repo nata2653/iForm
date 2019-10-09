@@ -30,7 +30,7 @@ document.querySelectorAll("input").forEach(input => {
   input.addEventListener("click", e => {
     buttonActivate();
     console.log(e.target.value);
-    let value = parseInt(e.target.value, "10");
+    let value = Number(e.target.value);
 
     document.querySelector(".amount").textContent = value;
     document.querySelector(".total-value").textContent = value + 600;

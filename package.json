@@ -20,5 +20,8 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.0"
+  },
+  "dependencies": {
+    "imask": "^5.2.1"
   }
 }
