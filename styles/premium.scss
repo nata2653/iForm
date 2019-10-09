@@ -46,7 +46,7 @@ header {
   right: 100vw;
 }
 
-.sizes input:checked + label {
+.sizes input:checked+label {
   border-color: $primary;
 }
 
@@ -78,6 +78,5 @@ header {
 
 .back p:hover {
   text-align: center;
-  // ! Husk at brug de rigtige farver
   color: $black;
 }
