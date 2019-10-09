@@ -11,7 +11,57 @@
 <script src="/styles.164d45a1.js"></script></head>
 
 <body>
+  <header>
+    <nav></nav>
+  </header>
 
+  <div class="form-wrapper">
+    <h2>Angiv dine personlige oplysninger</h2>
+
+    <form action="0">
+      <div class="field">
+        <input type="text" name="first-name" id="first-name" placeholder="Skriv dit fornavn" required="">
+        <label for="first-name"> <span>Fornavn</span></label>
+      </div>
+      <span class="invalid-msg">Venligt angiv dit fornavn</span>
+
+      <div class="field">
+        <input type="text" name="last-name" id="last-name" placeholder="Skriv dit efternavn" required="">
+        <label for="last-name"> <span>Efternavn</span></label>
+      </div>
+
+      <div class="field">
+        <input type="text" name="adresse" id="adresse" placeholder="adresse" required="">
+        <label for="adresse"> <span>Adresse</span></label>
+      </div>
+
+      <span class="city-container">
+        <div class="field postnr">
+          <input type="text" pattern="[0-9]{4}" name="postnr" id="postnr" placeholder="Postnr." maxlength="10" required="">
+          <label for="postnr"> <span>Postnr.</span></label>
+        </div>
+
+        <div class="field by">
+          <input type="text" name="city" id="city" placeholder="By" required="">
+          <label for="city"> <span>By</span></label>
+        </div>
+      </span>
+
+      <div class="field">
+        <input type="email" name="email" id="email" placeholder="Skriv din E-mail adresse" required="">
+        <label for="email"> <span>E-mail</span></label>
+      </div>
+
+      <div class="field">
+        <input type="phone" name="phone" id="phone" placeholder="Valgfrit">
+        <label for="phone"><span>Telefonnr.</span></label>
+      </div>
+      <input type="submit" value="Submit">
+
+
+    </form>
+  </div>
+  <script src="/form_script.478b790f.js"></script>
 </body>
 
 </html>
