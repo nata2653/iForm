@@ -18,6 +18,6 @@ document.querySelectorAll("input").forEach(input => {
 
 function activateButton() {
   document.querySelector(".next_btn").addEventListener("click", () => {
-    window.location.href = "magazine.html?size=" + size + "&price=" + price;
+    window.location.href = "magazine.html?size=" + size;
   });
 }

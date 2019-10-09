@@ -49,11 +49,7 @@ body {
   margin-right: 40px;
 }
 .order .btn-see-more {
-<<<<<<< HEAD
-  background: #f36;
-=======
   background: #5C1182;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 25px;
   width: 30vw;
   color: #f5f5f5;
@@ -277,7 +273,6 @@ header {
   border-color: #5C1182;
 }
 
-<<<<<<< HEAD
 .next_btn {
   display: flex;
   justify-content: center;
@@ -285,21 +280,12 @@ header {
 
 .next_btn button {
   width: 280px;
-=======
-.next_btn button {
-  width: 265px;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 60px;
   font-size: 1.3em;
   border-radius: 3px;
   background-color: #5C1182;
   color: white;
   font-family: "Open Sans", sans-serif;
-}
-
-<<<<<<< HEAD
-.next_btn button:hover {
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
 }
 
 .back p {
@@ -311,11 +297,6 @@ header {
 .back p:hover {
   text-align: center;
   color: #161616;
-=======
-.back p {
-  text-align: center;
-  color: #5C1182;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 .next_btn img {
@@ -338,7 +319,6 @@ body {
 h3 {
   font-family: "Raleway", sans-serif;
   text-align: center;
-<<<<<<< HEAD
 }
 
 .text p {
@@ -422,9 +402,6 @@ h3 {
 .prices span {
   color: #f36;
   font-size: 1.5em;
-=======
-  color: black;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

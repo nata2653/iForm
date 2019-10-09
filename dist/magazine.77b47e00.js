@@ -123,6 +123,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var box;
 var yourOffer;
 var discount;
+var urlParams = new URLSearchParams(window.location.search);
+var size = urlParams.get("size");
 var button = document.querySelector(".show-saving");
 var container = document.querySelectorAll(".container");
 button.addEventListener("click", showSaved);
@@ -144,7 +146,7 @@ function showSaved() {
 
 document.querySelectorAll("input").forEach(function (input) {
   input.addEventListener("click", function (e) {
-    // buttonActivate();
+    buttonActivate();
     console.log(e.target.value);
     var value = parseInt(e.target.value, "10");
     document.querySelector(".amount").textContent = value;
@@ -160,17 +162,17 @@ document.querySelectorAll("input").forEach(function (input) {
     } else if (e.target.value == 620) {
       document.querySelector(".disc").textContent = 921;
       discount = 921;
-    } // box.e.target.value;
-
+    }
   });
-}); // function buttonActivate() {
-//   document.querySelector(
-//     ".btn-go-to-view".addEventListener("click", () => {
-//       window.location.href = "view.html?box=" + box + "&price" + price;
-//     })
-//   );
-// }
-},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+});
+var specielPrice = parseInt(document.querySelector(".spec-price").textContent, "100");
+
+function buttonActivate() {
+  document.querySelector(".btn-go-to-view").addEventListener("click", function () {
+    window.location.href = "view.html?price=" + specielPrice + "&discount=" + discount + "&size=" + size;
+  });
+}
+},{}],"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -198,7 +200,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57611" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49625" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -373,5 +375,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","magazine.js"], null)
+},{}]},{},["../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","magazine.js"], null)
 //# sourceMappingURL=/magazine.77b47e00.js.map
