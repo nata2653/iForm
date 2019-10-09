@@ -146,7 +146,7 @@ document.querySelectorAll("input").forEach(function (input) {
   input.addEventListener("click", function (e) {
     // buttonActivate();
     console.log(e.target.value);
-    var value = parseInt(e.target.value, "10");
+    var value = Number(e.target.value);
     document.querySelector(".amount").textContent = value;
     document.querySelector(".total-value").textContent = value + 600;
     document.querySelector(".spec-price").textContent = value - discount + 600;
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57611" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59289" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
