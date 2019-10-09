@@ -71,11 +71,7 @@ body {
   margin-right: 40px;
 }
 .order .btn-see-more {
-<<<<<<< HEAD
-  background: #f36;
-=======
   background: #5C1182;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 25px;
   width: 30vw;
   color: #f5f5f5;
@@ -125,15 +121,6 @@ ul li::before {
   background-size: cover;
 }
 
-<<<<<<< HEAD
-.hide {
-  display: none;
-}
-
-.choose h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4em;
-=======
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 1.2em;
@@ -219,10 +206,7 @@ form .field input:focus + label span {
 }
 form .field .invalid {
   transition: all 0s;
-}
-form .field .invalid-msg {
-  font-family: "Open Sans", sans-serif;
-  color: red;
+  visibility: visible;
 }
 form .field .invalid,
 form .field input:invalid:not(:placeholder-shown):not(:focus) {
@@ -253,8 +237,7 @@ form .field input:valid:not(:placeholder-shown):not(:focus) + label {
 }
 form input[type=submit] {
   background: #5C1182;
-  height: 50px;
-  width: 30%;
+  padding: 0.5em 2em;
   color: #f5f5f5;
   font-size: 1.3em;
   text-align: center;
@@ -263,6 +246,15 @@ form input[type=submit] {
   border-radius: 5px;
   align-items: center;
   margin-top: 1em;
+}
+
+.invalid-msg {
+  color: red;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  width: 60%;
+  visibility: visible;
 }
 
 .city-container {
@@ -289,6 +281,7 @@ form input[type=submit] {
     display: grid;
   }
 }
+
 input[type=text] {
   text-transform: capitalize;
 }
@@ -298,8 +291,13 @@ input[type=text] {
     transform: translateX(5px);
   }
 }
-h2 {
->>>>>>> form
+.hide {
+  display: none;
+}
+
+.choose h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4em;
   text-align: center;
   margin: 2em 0em;
 }
@@ -462,7 +460,6 @@ h2 {
   border-color: #5C1182;
 }
 
-<<<<<<< HEAD
 .next_btn {
   display: flex;
   justify-content: center;
@@ -470,21 +467,12 @@ h2 {
 
 .next_btn button {
   width: 280px;
-=======
-.next_btn button {
-  width: 265px;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 60px;
   font-size: 1.3em;
   border-radius: 3px;
   background-color: #5C1182;
   color: white;
   font-family: "Open Sans", sans-serif;
-}
-
-<<<<<<< HEAD
-.next_btn button:hover {
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
 }
 
 .back p {
@@ -496,11 +484,6 @@ h2 {
 .back p:hover {
   text-align: center;
   color: #161616;
-=======
-.back p {
-  text-align: center;
-  color: #5C1182;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 .next_btn img {
@@ -523,7 +506,6 @@ body {
 h3 {
   font-family: "Raleway", sans-serif;
   text-align: center;
-<<<<<<< HEAD
 }
 
 .text p {
@@ -607,9 +589,6 @@ h3 {
 .prices span {
   color: #f36;
   font-size: 1.5em;
-=======
-  color: black;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 header {

@@ -16,6 +16,7 @@ form {
     max-width: 800px;
     margin: 0 auto;
 
+
     .field {
         display: flex;
         flex-flow: column-reverse;
@@ -99,12 +100,9 @@ form {
 
         .invalid {
             transition: all .0s;
+            visibility: visible;
         }
 
-        .invalid-msg {
-            font-family: $body-text;
-            color: red;
-        }
 
         .invalid,
         input:invalid:not(:placeholder-shown):not(:focus) {
@@ -136,12 +134,14 @@ form {
                 color: green;
             }
         }
+
+
+
     }
 
     input[type=submit] {
         background: $primary;
-        height: 50px;
-        width: 30%;
+        padding: .5em 2em;
         color: $white;
         font-size: 1.3em;
         text-align: center;
@@ -152,6 +152,19 @@ form {
         margin-top: 1em;
     }
 }
+
+
+.invalid-msg {
+    color: red;
+    font-family: $body-text;
+    font-weight: $body-semi-bold;
+    font-size: .8em;
+
+    width: 60%;
+    visibility: visible;
+}
+
+
 
 
 .city-container {
@@ -179,7 +192,7 @@ form {
         display: grid;
     }
 
-    #phone::after {}
+
 }
 
 

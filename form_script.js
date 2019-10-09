@@ -6,7 +6,20 @@ function start() {
     console.log('Connection between the DOM and the Script was successfull! Nice 😎');
     mask();
 }
-const form = document.querySelector("form")
+const form = document.querySelector("form");
+const input = document.querySelectorAll("input");
+
+
+input.forEach(inp => {
+
+    inp.addEventListener("blur", e => {
+        if (!e.target.checkValidity()) {
+            console.error("INVALID INPUT");
+        }
+    });
+
+
+});
 
 function mask() {
     var numberMask = IMask(
@@ -29,7 +42,8 @@ form.addEventListener("submit", e => {
     //const isValidEmail = emailField.checkValidity();
     form.querySelectorAll("input").forEach(inp => {
         if (!inp.checkValidity()) {
-            inp.classList.add("invalid")
+            inp.classList.add("invalid");
+
         }
     })
 
