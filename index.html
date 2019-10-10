@@ -1,157 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>I Form</title>
+    <link rel="stylesheet" href="styles.scss" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap" rel="stylesheet" />
+    <meta name="robots" content="noindex" />
+    <script src="https://kea-alt-del.dk/iform/login.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>I Form</title>
-  <link rel="stylesheet" href="styles.scss" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap"
-    rel="stylesheet" />
-  <meta name="robots" content="noindex" />
-  <script src="https://kea-alt-del.dk/iform/login.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav>☰</nav>
-    <a href="index.html">
-      <img src="img/iform.png" alt="I Form logo" />
-    </a>
-  </header>
-  <main>
-    <div class="txt-top">
-      <p>14 dages fortrydelsesret</p>
-      <p>Ingen binding</p>
-    </div>
-    <section class="carousel-images">
-      <!-- Carousel taken from https://getbootstrap.com/docs/4.0/components/carousel/ -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/jakke.jpg" alt="First slide" />
+  <body>
+    <header>
+      <nav>☰</nav>
+      <a href="index.html">
+        <img src="img/iform.png" alt="I Form logo" />
+      </a>
+    </header>
+    <main>
+      <div class="txt-top">
+        <p>14 dages fortrydelsesret</p>
+        <p>Ingen binding</p>
+      </div>
+      <section class="carousel-images">
+        <!-- Carousel taken from https://getbootstrap.com/docs/4.0/components/carousel/ -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/jakke.jpg" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/front1.jpg" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/front.jpg" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/front2.jpg" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/front3.jpg" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/front4.jpg" alt="Third slide" />
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/front1.jpg" alt="Second slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/front.jpg" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/front2.jpg" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/front3.jpg" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/front4.jpg" alt="Third slide" />
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-    <section class="order">
-      <div class="txt-order">
-        <p class="price">149 kr.</p>
-        <p class="saving">Spar 761 kr.</p>
-      </div>
-      <a href="premium.html" class="link-order">Bestil nu</a>
-      <p class="porto">+49,50 kr. i porto og eksp. <span>I alt 198,50 kr.</span></p>
-      <div class="ranking">
-        <img src="img/stars.svg" alt="ranking-stjerner" />
-        <p>4.2 af 5 (1902)</p>
-        <a href="#carousel-txt">Læsernes vurdering</a>
-      </div>
-      <ul>
-        <li class="info">Lækker & let fiberjakke fra ActiveFit</li>
-        <li class="info">Magasinet rammer din postkasse hver tredje uge - portofrit</li>
-        <li class="info">Du kan opsige dit abonnement når som helst. Efter tilbuddet fortsætter du i løbende abonnement
-          til 77,50 kr. pr. nummer inkl. levering.</li>
-        <li class="infohidden hide">Få store rabatter på træningstøj og udstyr i fordelsklubben ”Moreshop”</li>
-        <li class="infohidden hide">Digital udgave af de seneste 12 numre af I FORM via app'en WYPE</li>
-      </ul>
-      <button class="btn-see-more">Se mere</button>
-    </section>
-    <section id="carousel-txt">
-      <h1>En verden af sundhed og velvære.</h1>
-      <h2>Det siger læserne</h2>
-      <!-- Carousel taken from https://getbootstrap.com/docs/4.0/components/carousel/ -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block" src="img/rec9.png" alt="Second slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec2.png" alt="Second slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec3.png" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec4.png" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec5.png" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec6.png" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec7.png" alt="Third slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="img/rec8.png" alt="Third slide" />
-          </div>
+      </section>
+      <section class="order">
+        <div class="txt-order">
+          <p class="price">149 kr.</p>
+          <p class="saving">Spar 761 kr.</p>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer></footer>
+        <a href="premium.html" class="link-order">Bestil nu</a>
+        <p class="porto">+49,50 kr. i porto og eksp. <span>I alt 198,50 kr.</span></p>
+        <div class="ranking">
+          <img src="img/stars.png" alt="ranking-stjerner" />
+          <p>4.2 af 5 (1902)</p>
+          <a href="#carousel-txt">Læsernes vurdering</a>
+        </div>
+        <ul>
+          <li class="info">Lækker & let fiberjakke fra ActiveFit</li>
+          <li class="info">Magasinet rammer din postkasse hver tredje uge - portofrit</li>
+          <li class="info">Du kan opsige dit abonnement når som helst. Efter tilbuddet fortsætter du i løbende abonnement til 77,50 kr. pr. nummer inkl. levering.</li>
+          <li class="infohidden hide">Få store rabatter på træningstøj og udstyr i fordelsklubben ”Moreshop”</li>
+          <li class="infohidden hide">Digital udgave af de seneste 12 numre af I FORM via app'en WYPE</li>
+        </ul>
+        <button class="btn-see-more">Se mere</button>
+      </section>
+      <section id="carousel-txt">
+        <h1>En verden af sundhed og velvære.</h1>
+        <h2>Det siger læserne</h2>
+        <!-- Carousel taken from https://getbootstrap.com/docs/4.0/components/carousel/ -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block" src="img/rec9.png" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec2.png" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec3.png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec4.png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec5.png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec6.png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec7.png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block" src="img/rec8.png" alt="Third slide" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="script.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
