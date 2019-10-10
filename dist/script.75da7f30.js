@@ -118,8 +118,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"script.js":[function(require,module,exports) {
+"use strict";
 
-},{}],"../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+document.querySelector(".btn-see-more").addEventListener("click", showInfo);
+
+function showInfo() {
+  console.log("showInfo");
+  var button = document.querySelector(".btn-see-more");
+  var txt = document.querySelectorAll(".infohidden");
+  txt.forEach(function (txt) {
+    if (txt.classList.contains("hide")) {
+      txt.classList.remove("hide");
+      button.innerHTML = "Skjul";
+    } else {
+      txt.classList.add("hide");
+      button.innerHTML = "Se mere";
+    }
+  });
+}
+},{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -147,15 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59289" + '/');
-=======
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63477" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57611" + '/');
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
->>>>>>> c08752d60120ea24423afd2542e8cbe222fd0bd6
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50623" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -330,5 +339,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map

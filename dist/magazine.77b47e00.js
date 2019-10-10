@@ -122,7 +122,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
 var box;
 var yourOffer;
-var discount;
+var discount = 761;
+var premiumPrice = 600;
+var defaultPrice = Number(document.querySelector("input:checked").value);
+document.querySelector(".amount").textContent = defaultPrice;
+document.querySelector(".total-value").textContent = defaultPrice + premiumPrice;
+document.querySelector(".spec-price").textContent = defaultPrice - discount + premiumPrice;
+document.querySelector(".disc").textContent = discount;
 var button = document.querySelector(".show-saving");
 var container = document.querySelectorAll(".container");
 button.addEventListener("click", showSaved);
@@ -144,12 +150,8 @@ function showSaved() {
 
 document.querySelectorAll("input").forEach(function (input) {
   input.addEventListener("click", function (e) {
-    // buttonActivate();
     console.log(e.target.value);
     var value = Number(e.target.value);
-    document.querySelector(".amount").textContent = value;
-    document.querySelector(".total-value").textContent = value + 600;
-    document.querySelector(".spec-price").textContent = value - discount + 600;
 
     if (e.target.value == 310) {
       document.querySelector(".disc").textContent = 761;
@@ -160,16 +162,13 @@ document.querySelectorAll("input").forEach(function (input) {
     } else if (e.target.value == 620) {
       document.querySelector(".disc").textContent = 921;
       discount = 921;
-    } // box.e.target.value;
+    }
 
+    document.querySelector(".amount").textContent = value;
+    document.querySelector(".total-value").textContent = value + premiumPrice;
+    document.querySelector(".spec-price").textContent = value - discount + premiumPrice;
   });
-}); // function buttonActivate() {
-//   document.querySelector(
-//     ".btn-go-to-view".addEventListener("click", () => {
-//       window.location.href = "view.html?box=" + box + "&price" + price;
-//     })
-//   );
-// }
+});
 },{}],"../../../../.npm-global/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -198,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59289" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50623" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

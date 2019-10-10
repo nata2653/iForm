@@ -2,7 +2,13 @@
 
 let box;
 let yourOffer;
-let discount;
+let discount = 761;
+let premiumPrice = 600;
+let defaultPrice = Number(document.querySelector("input:checked").value);
+document.querySelector(".amount").textContent = defaultPrice;
+document.querySelector(".total-value").textContent = defaultPrice + premiumPrice;
+document.querySelector(".spec-price").textContent = defaultPrice - discount + premiumPrice;
+document.querySelector(".disc").textContent = discount;
 
 const button = document.querySelector(".show-saving");
 let container = document.querySelectorAll(".container");
@@ -26,13 +32,8 @@ function showSaved() {
 
 document.querySelectorAll("input").forEach(input => {
   input.addEventListener("click", e => {
-    // buttonActivate();
     console.log(e.target.value);
     let value = Number(e.target.value);
-
-    document.querySelector(".amount").textContent = value;
-    document.querySelector(".total-value").textContent = value + 600;
-    document.querySelector(".spec-price").textContent = value - discount + 600;
 
     if (e.target.value == 310) {
       document.querySelector(".disc").textContent = 761;
@@ -44,15 +45,8 @@ document.querySelectorAll("input").forEach(input => {
       document.querySelector(".disc").textContent = 921;
       discount = 921;
     }
-
-    // box.e.target.value;
+    document.querySelector(".amount").textContent = value;
+    document.querySelector(".total-value").textContent = value + premiumPrice;
+    document.querySelector(".spec-price").textContent = value - discount + premiumPrice;
   });
 });
-
-// function buttonActivate() {
-//   document.querySelector(
-//     ".btn-go-to-view".addEventListener("click", () => {
-//       window.location.href = "view.html?box=" + box + "&price" + price;
-//     })
-//   );
-// }

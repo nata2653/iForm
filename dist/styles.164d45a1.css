@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .txt-top {
   display: flex;
   justify-content: center;
@@ -17,7 +22,7 @@ body {
   margin-right: 0.7em;
   width: 12px;
   height: 12px;
-  background-image: url(/checkmark-pink.76d949b9.png);
+  background-image: url(/checkmark-purple.a4fc0fde.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -33,6 +38,8 @@ body {
 .order {
   display: grid;
   justify-items: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .order a {
   font-family: "Open Sans", sans-serif;
@@ -71,13 +78,9 @@ body {
   margin-right: 40px;
 }
 .order .btn-see-more {
-<<<<<<< HEAD
-  background: #f36;
-=======
   background: #5C1182;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 25px;
-  width: 30vw;
+  width: 10em;
   color: #f5f5f5;
   justify-self: right;
   margin: 0px 30px 10px 0px;
@@ -108,6 +111,7 @@ body {
 ul {
   line-height: 1.7;
   margin-right: 10px;
+  position: relative;
 }
 ul li {
   list-style-type: none;
@@ -116,13 +120,31 @@ ul li {
 ul li::before {
   content: "";
   position: absolute;
-  left: 1.4em;
+  left: 1em;
   margin-top: 7px;
   width: 12px;
   height: 12px;
   background-image: url(/checkmark-pink.76d949b9.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#carousel-txt {
+  margin-top: 2em;
+  display: grid;
+  justify-items: center;
+}
+#carousel-txt h1 {
+  text-align: center;
+  font-size: 1.6em;
+}
+#carousel-txt h2 {
+  font-size: 1.3em;
+  margin-top: 1em;
+}
+#carousel-txt img {
+  max-width: 500px;
+  min-width: 300px;
 }
 
 .hide {
@@ -152,6 +174,7 @@ ul li::before {
   width: 70%;
   text-align: center;
   position: relative;
+  border-radius: 5px;
 }
 .boxes label:first-of-type {
   margin-bottom: 20px;
@@ -168,11 +191,13 @@ ul li::before {
   content: attr(data-label);
   color: #f5f5f5;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 3px;
+  left: -1px;
+  right: -1px;
   transform: translateY(-100%);
   background: #f36;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .boxes .porto {
   justify-self: left;
@@ -223,6 +248,7 @@ ul li::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .back {
@@ -237,6 +263,7 @@ ul li::before {
   color: #f36;
   text-decoration: underline;
   margin: -1em 0em 0em 2.8em;
+  border: none;
 }
 .show-saving:hover {
   border-color: black;
@@ -294,7 +321,6 @@ h2 {
   border-color: #5C1182;
 }
 
-<<<<<<< HEAD
 .next_btn {
   display: flex;
   justify-content: center;
@@ -302,21 +328,12 @@ h2 {
 
 .next_btn button {
   width: 280px;
-=======
-.next_btn button {
-  width: 265px;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
   height: 60px;
   font-size: 1.3em;
   border-radius: 3px;
   background-color: #5C1182;
   color: white;
   font-family: "Open Sans", sans-serif;
-}
-
-<<<<<<< HEAD
-.next_btn button:hover {
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 3px 3px 0 rgba(0, 0, 0, 0.23);
 }
 
 .back p {
@@ -328,11 +345,6 @@ h2 {
 .back p:hover {
   text-align: center;
   color: #161616;
-=======
-.back p {
-  text-align: center;
-  color: #5C1182;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 .next_btn img {
@@ -355,7 +367,6 @@ body {
 h3 {
   font-family: "Raleway", sans-serif;
   text-align: center;
-<<<<<<< HEAD
 }
 
 .text p {
@@ -439,9 +450,6 @@ h3 {
 .prices span {
   color: #f36;
   font-size: 1.5em;
-=======
-  color: black;
->>>>>>> 75f85e0760e5d9f172e8a8cf7dc7d7633878c047
 }
 
 header {
