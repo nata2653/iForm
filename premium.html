@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>I Form</title>
-    <link rel="stylesheet" href="styles.scss" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <nav>☰</nav>
-      <a href="index.html">
-        <img src="img/iform.png" alt="I Form logo" />
-      </a>
-    </header>
-    <h2>Vælg størrelse</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>I Form</title>
+  <link rel="stylesheet" href="styles.scss" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <div class="image">
-      <img src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2018/08/662_ifo_fiberjakke_600x600-1-255x255.png" alt="fiberjakke" />
-    </div>
+<body>
+  <header>
+    <nav>☰</nav>
+    <a href="index.html">
+      <img src="img/iform.png" alt="I Form logo" />
+    </a>
+  </header>
+  <div class="breadcrums">
+    <ol>
+      <li class="breadcrum-group">
+        <a href="premium.html" class="breadcrum active">1. Vælg størrelse</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="magazine.html" class="breadcrum">2. Vælg tilbud</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="view.html" class="breadcrum">3. Oversigt</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="form.html" class="breadcrum">4. Levering</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="payment.html" class="breadcrum">5. Betalingsmetode</a>
+      </li>
+    </ol>
+  </div>
+  <h2>Vælg størrelse</h2>
 
-    <!-- <div class="sizes">
+  <div class="image">
+    <img
+      src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2018/08/662_ifo_fiberjakke_600x600-1-255x255.png"
+      alt="fiberjakke" />
+  </div>
+
+  <!-- <div class="sizes">
       <button data-str="s">S</button>
       <button data-str="m">M</button>
       <button data-str="l">L</button>
       <button data-str="xl">XL</button>
     </div> -->
 
-    <div class="sizes">
-      <div class="form-control">
-        <input type="radio" name="size" value="small" id="small" />
-        <label for="small">S</label>
-      </div>
-      <div class="form-control">
-        <input type="radio" name="size" value="medium" id="medium" />
-        <label for="medium">M</label>
-      </div>
-      <div class="form-control">
-        <input type="radio" name="size" value="large" id="large" />
-        <label for="large">L</label>
-      </div>
-      <div class="form-control">
-        <input type="radio" name="size" value="ekstralarge" id="ekstralarge" />
-        <label for="ekstralarge">XL</label>
-      </div>
+  <div class="sizes">
+    <div class="form-control">
+      <input type="radio" name="size" value="small" id="small" />
+      <label for="small">S</label>
     </div>
-    <div class="next_btn">
-      <button>Videre</button>
+    <div class="form-control">
+      <input type="radio" name="size" value="medium" id="medium" />
+      <label for="medium">M</label>
     </div>
+    <div class="form-control">
+      <input type="radio" name="size" value="large" id="large" />
+      <label for="large">L</label>
+    </div>
+    <div class="form-control">
+      <input type="radio" name="size" value="ekstralarge" id="ekstralarge" />
+      <label for="ekstralarge">XL</label>
+    </div>
+  </div>
+  <div class="next_btn">
+    <button>Videre</button>
+  </div>
 
-    <div class="back">
-      <a href="index.html"><p>Gå tilbage</p></a>
-    </div>
+  <div class="back">
+    <a href="index.html">
+      <p>Gå tilbage</p>
+    </a>
+  </div>
 
-    <script src="premium_script.js"></script>
-  </body>
+  <script src="premium_script.js"></script>
+</body>
+
 </html>

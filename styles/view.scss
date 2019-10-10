@@ -2,6 +2,10 @@
   width: 15px;
 }
 
+.view-h2 {
+  margin-bottom: 1em;
+}
+
 .next_btn button {
   border-radius: 5px;
 }
@@ -53,12 +57,14 @@ h3 {
 .first span {
   color: $red;
 }
+
 .second {
   display: flex;
   justify-content: space-between;
   margin: 15px;
   border-bottom: 1px solid $grey;
 }
+
 .third {
   display: flex;
   justify-content: space-between;
