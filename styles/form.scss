@@ -121,6 +121,7 @@ form {
         }
 
 
+        .valid,
         input:valid:not(:placeholder-shown):not(:focus) {
             border: green 1px solid;
             background-position-x: calc(100% - 16px);

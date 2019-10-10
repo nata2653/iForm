@@ -17,9 +17,137 @@
       <img src="/iform.72f5cec3.png" alt="I Form logo">
     </a>
   </header>
+  <div class="breadcrums">
+    <ol>
+      <li class="breadcrum-group">
+        <a href="#" class="breadcrum">1. Vælg størrelse</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="#" class="breadcrum">2. Vælg tilbud</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="#" class="breadcrum">3. Oversigt</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="#" class="breadcrum">4. Levering</a>
+        <span class="breadcrumb__divider" aria-hidden="true">/</span>
+      </li>
+      <li class="breadcrum-group">
+        <a href="#" class="breadcrum active">5. Betalingsmetode</a>
+      </li>
+    </ol>
+  </div>
+  <form action="0">
+    <h2>Vælg betalings metode</h2>
+    <div class="group">
+      <label for="dankort">
+        <input type="radio" name="payment" id="dankort" checked="">
+        Visa/Dankort
+      </label>
+      <div class="icons">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-dankort.png">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-fbf.png">
+      </div>
+    </div>
+    <div class="group">
+      <label for="kreditkort">
+        <input type="radio" name="payment" id="kreditkort">
+        Kreditkort
+      </label>
+      <div class="icons">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-visa.png"><img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mastercard.png"><img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-electron.png"><img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-maestro.png">
+      </div>
+    </div>
+    <div class="group">
+      <label for="mobilepay">
+        <input type="radio" name="payment" id="mobilepay">
+        Mobilepay
+      </label>
+      <div class="icons">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mobilepay.png">
+      </div>
+    </div>
+    <div class="group">
+      <label for="girokort">
+        <input type="radio" name="payment" id="girokort">
+        Girokort
+        <span class="">+ 15 kr i afgift</span>
+      </label>
+    </div>
+  </form>
+  <main>
+    <h2>Oversigt</h2>
+    <div class="border">
+      <div class="oversigt">
+        <div class="image">
+          <img src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2018/08/662_ifo_fiberjakke_600x600-1-255x255.png" alt="">
+        </div>
+        <div class="text">
+          <h1>4 nr. af i Form</h1>
+          <h3>+ ActiveFit fiberjakke</h3>
+          <p>størrelse: <b>M</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="price">
+      <p>Totalpris inkl. levering</p>
+      <h1>198,50 kr.</h1>
+    </div>
+
+
+    <form action="0" id="terms-conds">
+      <div class="term-group">
+        <label for="terms">
+          <input type="checkbox" name="checkbox" id="terms" required="">
+          Jeg har læst og accepteret vilkår for kortbetaling <a href="">betingelser</a></label>
+      </div>
+      <div class="term-group">
+        <label for="subscription-terms">
+          <input type="checkbox" name="checkbox" id="subscription-terms" required="">
+          Jeg har læst og accepteret abonnementsbetingelserne <a href="">læs mere</a></label>
+      </div>
+      <div class="term-group">
+        <label for="newsletter">
+          <input type="checkbox" name="checkbox" id="newsletter" required="">
+          Ja tak, jeg vil gerne modtage spændende nyhedsbreve og tilbud om Medieprodukter, Bolig &amp; Livsstil, Sport
+          &amp; Fritid, Rejser, Mode &amp; Skønhed, Dagligvarer, Events, Analyser og Spil via brev, telefon og andre
+          elektroniske medier f.eks e-mail og sms fra Bonnier Publications Koncernen. Du kan til hver en tid afmelde dig
+          direkte markedsføring. <a href="#">Læs mere</a></label>
+      </div>
 
 
 
+      <input type="submit" id="submit" value="Gå til sikker betaling" disabled="">
+    </form>
+
+    <div class="back-link">
+      <a href="/form.html" class="back">Gå tilbage</a>
+    </div>
+  </main>
+
+
+  <script>var form = document.querySelector("#terms-conds");
+var terms = document.querySelector("#terms");
+var subTerms = document.querySelector("#subscription-terms");
+var newsletter = document.querySelector("#newsletter");
+form.setAttribute("novalidate", true);
+document.querySelectorAll("input[name=checkbox]").forEach(function (inp) {
+  inp.addEventListener("input", function () {
+    if (terms.checked == true && subTerms.checked == true) {
+      document.querySelector("#submit").removeAttribute("disabled");
+    } else {
+      document.querySelector("#submit").setAttribute("disabled", true);
+    }
+  });
+});
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  window.location.href = "safe-payment.html";
+});</script>
 
 </body>
 

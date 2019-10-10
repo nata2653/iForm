@@ -36,16 +36,25 @@ function mask() {
         });
 }
 
-form.setAttribute("novalidate", true);
+// form.setAttribute("novalidate", true);
 form.addEventListener("submit", e => {
     e.preventDefault();
     //const isValidEmail = emailField.checkValidity();
     form.querySelectorAll("input").forEach(inp => {
         if (!inp.checkValidity()) {
             inp.classList.add("invalid");
-
+            inp.addEventListener("keypress", () => {
+                if (!inp.checkValidity()) {
+                    inp.classList.add("invalid");
+                } else {
+                    inp.classList.add("valid");
+                }
+            });
         }
-    })
+    });
 
-    //form.reportValidity();
-})
+    if (form.checkValidity()) {
+        window.location.href = "payment.html";
+    }
+
+});
