@@ -36,7 +36,7 @@ function mask() {
         });
 }
 
-// form.setAttribute("novalidate", true);
+form.setAttribute("novalidate", true);
 form.addEventListener("submit", e => {
     e.preventDefault();
     //const isValidEmail = emailField.checkValidity();
