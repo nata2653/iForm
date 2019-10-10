@@ -1,104 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>I Form</title>
+    <link rel="stylesheet" href="styles.scss" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap" rel="stylesheet" />
+    <meta name="robots" content="noindex" />
+    <script src="https://kea-alt-del.dk/iform/login.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>I Form</title>
-  <link rel="stylesheet" href="styles.scss" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap"
-    rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>I Form</title>
+    <link rel="stylesheet" href="styles.scss" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>I Form</title>
-  <link rel="stylesheet" href="styles.scss" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <nav>☰</nav>
+      <a href="index.html">
+        <img src="img/iform.png" alt="I Form logo" />
+      </a>
+    </header>
+    <div class="breadcrums">
+      <ol>
+        <li class="breadcrum-group">
+          <a href="premium.html" class="breadcrum">1. Vælg størrelse</a>
+          <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrum-group">
+          <a href="magazine.html" class="breadcrum">2. Vælg tilbud</a>
+          <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrum-group">
+          <a href="view.html" class="breadcrum">3. Oversigt</a>
+          <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrum-group">
+          <a href="form.html" class="breadcrum active">4. Levering</a>
+          <span class="breadcrumb__divider" aria-hidden="true">/</span>
+        </li>
+        <li class="breadcrum-group">
+          <a href="payment.html" class="breadcrum">5. Betalingsmetode</a>
+        </li>
+      </ol>
+    </div>
 
-<body>
-  <header>
-    <nav>☰</nav>
-    <a href="index.html">
-      <img src="img/iform.png" alt="I Form logo" />
-    </a>
-  </header>
-  <div class="breadcrums">
-    <ol>
-      <li class="breadcrum-group">
-        <a href="premium.html" class="breadcrum">1. Vælg størrelse</a>
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-      </li>
-      <li class="breadcrum-group">
-        <a href="magazine.html" class="breadcrum">2. Vælg tilbud</a>
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-      </li>
-      <li class="breadcrum-group">
-        <a href="view.html" class="breadcrum">3. Oversigt</a>
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-      </li>
-      <li class="breadcrum-group">
-        <a href="form.html" class="breadcrum active">4. Levering</a>
-        <span class="breadcrumb__divider" aria-hidden="true">/</span>
-      </li>
-      <li class="breadcrum-group">
-        <a href="payment.html" class="breadcrum">5. Betalingsmetode</a>
-      </li>
-    </ol>
-  </div>
+    <div class="form-wrapper">
+      <h2>Angiv dine personlige oplysninger</h2>
 
-  <div class="form-wrapper">
-    <h2>Angiv dine personlige oplysninger</h2>
-
-    <form action="0">
-      <div class="field">
-        <input type="text" name="first-name" id="first-name" placeholder="Skriv dit fornavn" required>
-        <label for="first-name"> <span>Fornavn</span></label>
-      </div>
-
-
-      <div class="field">
-        <input type="text" name="last-name" id="last-name" placeholder="Skriv dit efternavn" required>
-        <label for="last-name"> <span>Efternavn</span></label>
-      </div>
-
-      <div class="field">
-        <input type="text" name="adresse" id="adresse" placeholder="adresse" required>
-        <label for="adresse"> <span>Adresse</span></label>
-      </div>
-
-      <span class="city-container">
-        <div class="field postnr">
-          <input type="text" pattern="[0-9]{4}" name="postnr" id="postnr" placeholder="Postnr." maxlength="10" required>
-          <label for="postnr"> <span>Postnr.</span></label>
+      <form action="0">
+        <div class="field">
+          <input type="text" name="first-name" id="first-name" placeholder="Skriv dit fornavn" required />
+          <label for="first-name"> <span>Fornavn</span></label>
         </div>
 
-        <div class="field by">
-          <input type="text" name="city" id="city" placeholder="By" required>
-          <label for="city"> <span>By</span></label>
+        <div class="field">
+          <input type="text" name="last-name" id="last-name" placeholder="Skriv dit efternavn" required />
+          <label for="last-name"> <span>Efternavn</span></label>
         </div>
-      </span>
 
-      <div class="field">
-        <input type="email" name="email" id="email" placeholder="Skriv din E-mail adresse" required>
-        <label for="email"> <span>E-mail</span></label>
-      </div>
+        <div class="field">
+          <input type="text" name="adresse" id="adresse" placeholder="adresse" required />
+          <label for="adresse"> <span>Adresse</span></label>
+        </div>
 
-      <div class="field">
-        <input type="phone" name="phone" id="phone" placeholder="Valgfrit">
-        <label for="phone"><span>Telefonnr. (Valgfrit)</span></label>
-      </div>
-      <input type="submit" value="Submit">
+        <span class="city-container">
+          <div class="field postnr">
+            <input type="text" pattern="[0-9]{4}" name="postnr" id="postnr" placeholder="Postnr." maxlength="10" required />
+            <label for="postnr"> <span>Postnr.</span></label>
+          </div>
 
+          <div class="field by">
+            <input type="text" name="city" id="city" placeholder="By" required />
+            <label for="city"> <span>By</span></label>
+          </div>
+        </span>
 
-    </form>
-  </div>
-  <script src="form_script.js"></script>
-</body>
+        <div class="field">
+          <input type="email" name="email" id="email" placeholder="Skriv din E-mail adresse" required />
+          <label for="email"> <span>E-mail</span></label>
+        </div>
 
+        <div class="field">
+          <input type="phone" name="phone" id="phone" placeholder="Valgfrit" />
+          <label for="phone"><span>Telefonnr. (Valgfrit)</span></label>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="form_script.js"></script>
+  </body>
 </html>
