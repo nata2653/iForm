@@ -13,10 +13,13 @@ h2 {
 
 .sizes {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
-  grid-column-gap: 0.2px;
-  margin: 40px 0 30px 50px;
+  grid-gap: 20px;
+  // grid-column-gap: 10px;
+  // margin: 40px 0 30px 50px;
+  margin: 30px;
+
   font-family: $body-text;
 }
 
@@ -52,7 +55,7 @@ h2 {
 .next_btn button {
   width: 280px;
   height: 60px;
-
+  border-radius: 5px;
   font-size: 1.3em;
   border-radius: 3px;
   background-color: $primary;
@@ -72,6 +75,17 @@ h2 {
 
 .back p:hover {
   text-align: center;
-  // ! Husk at brug de rigtige farver
   color: $black;
+}
+
+@media screen and (min-width: 800px) {
+  .sizes {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+  }
+
+  .next_btn button {
+    margin: 0 auto;
+  }
 }
