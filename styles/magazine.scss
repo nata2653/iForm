@@ -51,7 +51,7 @@
       left: -1px;
       right: -1px;
       transform: translateY(-100%);
-      background: $red;
+      background: $primary;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
     }
@@ -75,7 +75,8 @@
   }
 
   input:checked + label {
-    border: 2px $primary solid;
+    border: 1px $primary solid;
+    box-shadow: inset 0 0 0 1px $primary;
   }
 
   input:checked + label:after {
@@ -126,7 +127,7 @@
   justify-self: left;
   color: $red;
   text-decoration: underline;
-  margin: -1em 0em 0em 2.8em;
+  margin: -1em 0em 1.3em 2.8em;
   border: none;
 
   &:hover {
