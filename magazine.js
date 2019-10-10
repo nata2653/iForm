@@ -3,6 +3,8 @@
 let box;
 let yourOffer;
 let discount;
+let urlParams = new URLSearchParams(window.location.search);
+let size = urlParams.get("size");
 
 const button = document.querySelector(".show-saving");
 let container = document.querySelectorAll(".container");
@@ -26,7 +28,7 @@ function showSaved() {
 
 document.querySelectorAll("input").forEach(input => {
   input.addEventListener("click", e => {
-    // buttonActivate();
+    buttonActivate();
     console.log(e.target.value);
     let value = Number(e.target.value);
 
@@ -44,15 +46,12 @@ document.querySelectorAll("input").forEach(input => {
       document.querySelector(".disc").textContent = 921;
       discount = 921;
     }
-
-    // box.e.target.value;
   });
 });
+let specielPrice = parseInt(document.querySelector(".spec-price").textContent, "100");
 
-// function buttonActivate() {
-//   document.querySelector(
-//     ".btn-go-to-view".addEventListener("click", () => {
-//       window.location.href = "view.html?box=" + box + "&price" + price;
-//     })
-//   );
-// }
+function buttonActivate() {
+  document.querySelector(".btn-go-to-view").addEventListener("click", () => {
+    window.location.href = "view.html?price=" + specielPrice + "&discount=" + discount + "&size=" + size;
+  });
+}
