@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="styles.scss" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,600,700&display=swap"
     rel="stylesheet" />
+  <meta name="robots" content="noindex" />
+  <script src="https://kea-alt-del.dk/iform/login.js"></script>
 </head>
 
 <body>
@@ -45,38 +47,38 @@
     <h2>Vælg betalings metode</h2>
     <div class="group">
       <label for="dankort">
-        <input type="radio" name="payment" id="dankort" checked>
+        <input type="radio" name="payment" id="dankort" checked />
         Visa/Dankort
       </label>
       <div class="icons">
-        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-dankort.png">
-        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-fbf.png">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-dankort.png" />
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-fbf.png" />
       </div>
     </div>
     <div class="group">
       <label for="kreditkort">
-        <input type="radio" name="payment" id="kreditkort">
+        <input type="radio" name="payment" id="kreditkort" />
         Kreditkort
       </label>
       <div class="icons">
-        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-visa.png"><img
-          src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mastercard.png"><img
-          src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-electron.png"><img
-          src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-maestro.png">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-visa.png" /><img
+          src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mastercard.png" /><img
+          src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-electron.png" /><img
+          src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-maestro.png" />
       </div>
     </div>
     <div class="group">
       <label for="mobilepay">
-        <input type="radio" name="payment" id="mobilepay">
+        <input type="radio" name="payment" id="mobilepay" />
         Mobilepay
       </label>
       <div class="icons">
-        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mobilepay.png">
+        <img src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/logo-mobilepay.png" />
       </div>
     </div>
     <div class="group">
       <label for="girokort">
-        <input type="radio" name="payment" id="girokort">
+        <input type="radio" name="payment" id="girokort" />
         Girokort
         <span class="">+ 15 kr i afgift</span>
       </label>
@@ -89,7 +91,7 @@
         <div class="image">
           <img
             src="https://bonnier-magazine-shop-media.interactives.dk/uploads/2018/08/662_ifo_fiberjakke_600x600-1-255x255.png"
-            alt="">
+            alt="" />
         </div>
         <div class="text">
           <h1>4 nr. af i Form</h1>
@@ -104,37 +106,34 @@
       <h1>198,50 kr.</h1>
     </div>
 
-
     <form action="0" id="terms-conds">
       <div class="term-group">
         <label for="terms">
-          <input type="checkbox" name="checkbox" id="terms" required>
+          <input type="checkbox" name="checkbox" id="terms" required />
           Jeg har læst og accepteret vilkår for kortbetaling <a href="">betingelser</a></label>
       </div>
       <div class="term-group">
         <label for="subscription-terms">
-          <input type="checkbox" name="checkbox" id="subscription-terms" required>
+          <input type="checkbox" name="checkbox" id="subscription-terms" required />
           Jeg har læst og accepteret abonnementsbetingelserne <a href="">læs mere</a></label>
       </div>
       <div class="term-group">
         <label for="newsletter">
-          <input type="checkbox" name="checkbox" id="newsletter" required>
+          <input type="checkbox" name="checkbox" id="newsletter" required />
           Ja tak, jeg vil gerne modtage spændende nyhedsbreve og tilbud om Medieprodukter, Bolig &amp; Livsstil, Sport
-          &amp; Fritid, Rejser, Mode &amp; Skønhed, Dagligvarer, Events, Analyser og Spil via brev, telefon og andre
-          elektroniske medier f.eks e-mail og sms fra Bonnier Publications Koncernen. Du kan til hver en tid afmelde dig
-          direkte markedsføring. <a href="#">Læs mere</a></label>
+          &amp; Fritid, Rejser, Mode &amp; Skønhed, Dagligvarer, Events, Analyser og Spil
+          via brev, telefon og andre elektroniske medier f.eks e-mail og sms fra Bonnier Publications Koncernen. Du kan
+          til hver en tid afmelde dig direkte markedsføring.
+          <a href="#">Læs mere</a></label>
       </div>
 
-
-
-      <input type="submit" id="submit" value="Gå til sikker betaling" disabled>
+      <input type="submit" id="submit" value="Gå til sikker betaling" disabled />
     </form>
 
     <div class="back-link">
       <a href="/form.html" class="back">Gå tilbage</a>
     </div>
   </main>
-
 
   <script>
     const form = document.querySelector("#terms-conds");
