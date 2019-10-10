@@ -141,6 +141,7 @@ form {
     }
 
     input[type=submit] {
+        -webkit-appearance: none;
         background: $primary;
         padding: .5em 2em;
         color: $white;
