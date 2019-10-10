@@ -73,9 +73,8 @@ h2 {
   font-family: $body-text;
 }
 
-.back p:hover {
-  text-align: center;
-  color: $black;
+.back a {
+  color: $grey;
 }
 
 @media screen and (min-width: 800px) {
